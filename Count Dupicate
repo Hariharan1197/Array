@@ -1,0 +1,28 @@
+int main()
+{
+int n,i,j,c=0,z=-2;
+int ar[1000];
+int flag;
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+scanf("%d", &ar[i]);
+}
+for(i=0;i<n;i++)
+{
+flag=0;
+for(j=i+1;j<n;j++)
+{
+if(ar[i]==ar[j])
+{
+flag=1;
+ar[j]=z--;
+}
+}
+if(flag==1)
+{
+c+=1;
+}
+}
+printf("%d", c);
+}
