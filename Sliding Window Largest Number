@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int a,b,d;
+scanf("%d%d", &a,&b);
+int c[b];
+int i,j;
+for(i=0;i<b;i++)
+{
+    scanf("%d", &c[i]);
+}
+for(i=0;i<b;i++)
+{
+    d=i+a;
+    if(d<=b)
+    {
+        for(j=i+1;j<d;j++)
+        {
+            if(c[i]>c[j])
+            {
+                c[i]=c[i];
+            }
+            else
+            {
+                c[i]=c[j];
+            }
+        }
+        printf("%d ",c[i]);
+    }
+}
+
+}
