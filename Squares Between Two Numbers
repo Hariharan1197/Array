@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int a,b,c,d=0;
+scanf("%d%d", &a,&b);
+for(int i=a;i<=b;i++)
+{
+   c=sqrt(i);
+   d=c+1;
+   if(c*c==i)
+   {
+       printf("%d",i);
+       if(d*d<=b)
+       {
+           printf(",");
+       }
+   }
+}
+
+}
