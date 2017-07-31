@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int b,x,y;
+scanf("%d%d%d",&b,&x,&y);
+float d,ap=0.000;
+if((b%x==0)&&(b%y==0))
+{
+    printf("%.3f",ap);
+}
+else if(b%x==0)
+{
+    d=(b*0.01*x);
+    ap=b-d;
+    printf("%.3f",ap);
+}
+else if(b%y==0)
+{
+    d=(b*0.01*y);
+    ap=b-d;
+    printf("%.3f",ap);
+}
+else
+{
+   float f=b;
+    printf("%.3f",f);
+}
+}
