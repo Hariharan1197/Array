@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int A,B,C;
+scanf("%d %d %d", &A,&B,&C);
+if(A==B &&B==C)
+{
+    printf("TIE");
+}
+else if(A==B)
+{
+    printf("Arun Balaji");
+}
+else if(B==C)
+{
+    printf("Balaji Chandra");
+}
+else if(A==C)
+{
+    printf("Arun Chandra");
+}
+else
+{
+    if((A>B)&&(A>C))
+    {
+        printf("Arun");
+    }
+    else if((B>C)&&(B>A))
+    {
+        printf("Balaji");
+    }
+    else
+    {
+        printf("Chandra");
+    }
+}
+
+}
