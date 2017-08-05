@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n,i;
+int even=0,odd=0,neg=0;
+int n1[1000];
+scanf("%d",&n);
+for(i=0;i<1000;i++)
+{
+    scanf("%d ", &n1[i]);
+}
+for(i=0;i<n;i++)
+{
+    if(n1[i]<0)
+    {
+        neg++;
+    }
+    else if(n1[i]%2==0)
+    {
+        even++;
+    }
+    else
+    {
+        odd++;
+    }
+}
+printf("%d %d %d", odd,even,neg);
+}
