@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int a,b,c,i,j;
+scanf("%d",&a);
+b=a/2;
+c=a/2;
+for(i=0;i<=(a/2);i++)
+{
+    for(j=0;j<a;j++)
+    {
+        if(j>=b && j<=c)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf("!");
+        }
+    }
+    b--;
+    c++;
+    printf(" ");
+}
+
+}
