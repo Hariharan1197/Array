@@ -86,4 +86,4 @@ Input:
 Output: 4 
 Explanation:
 10, 20, 30, 40 form a relative group.55, 35, 22 form another relative group.
-So the count of relatives for the person with identifier 40 is 4.
+So the count of relatives for the person with identifier 40 is 4..
